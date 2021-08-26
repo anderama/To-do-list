@@ -71,3 +71,32 @@ body {
   width: 100%;
   position: relative;
 }
+
+.task {
+  background-color: #fff;
+  height: 50px;
+  padding: 5px 10px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+
+  span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  button {
+    background-color: #0abde3;
+    color: #ffffff;
+    height: 100%;
+    width: 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+}
