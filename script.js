@@ -12,6 +12,15 @@ document.querySelector('#push').onclick = function() {
           <button class="delete">
             <i class="far fa-trash-alt"></i>
           </button>
-        </div>`
+        </div>
+    `;
+
+    // Deletando a tarefa criada
+    var currentTasks = document.querySelectorAll('.delete');
+    for(var i=0; i<currentTasks.length; i++) {
+      currentTasks[i].onclick = function() {
+        this.parentNode.remove();
+      }
+    }
   }
 }
