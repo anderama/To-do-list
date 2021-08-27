@@ -2,7 +2,7 @@
 
 ## 📖 Sobre
 
-Esse projeto foi criado com o intuito de desenvolver minhas habilidades com o JavaScript.
+Esse projeto foi realizado utilizando o conceito Glassmorphism e teve como intuito, desenvolver e melhorar minhas habilidades com o JavaScript.
 
 ## 💻 Layout
 
