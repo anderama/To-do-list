@@ -8,7 +8,14 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  background: linear-gradient(135deg, #48c6ef, #6f86d6);
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .container {
@@ -21,28 +28,36 @@ body {
   top: 50%;
   left: 50%;
   padding: 30px 40px;
+  background: rgba(255, 255, 255, 0.25);
 }
 
 #newtask {
-  background-color: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 3.46%, rgba(255, 255, 255, 0) 100%);
+  border: 2px solid #FFFFFF;
   padding: 30px 20px;
   border-radius: 5px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-
+  
   input {
+    background: transparent;
     width: 70%;
     height: 45px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    border: 2px solid #d1d3d4;
-    padding: 12px;
     color: #121213;
+    border-top: none;
+    border-inline: none;
+    border-bottom: 3px solid #fff;
+    padding: 12px;
     font-weight: 500;
     position: relative;
 
+    &::placeholder {
+      color: #fff;
+    }
+
     &:focus {
       outline: none;
-      border-color: #0abde3;
+      border-color: #3dc1d3;
     }
   }
 
@@ -58,39 +73,40 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: #fff;
-    background-color: #0abde3;
+    background-color: #3dc1d3;
   }
 }
 
 #tasks {
-  background-color: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 3.46%, rgba(255, 255, 255, 0) 100%);
+  border: 2px solid #FFFFFF;
   padding: 30px 20px;
   margin-top: 24px;
   border-radius: 5px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   width: 100%;
   position: relative;
 }
 
 .task {
-  background-color: #fff;
+  background: transparent;
   height: 50px;
   padding: 5px 10px;
-  margin-top: 8px;
+  margin: 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #d1d3d4;
+  border-bottom: 2px solid #fff;
   cursor: pointer;
 
   span {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    color: #fff;
   }
 
   button {
-    background-color: #0abde3;
+    background-color: #3dc1d3;
     color: #ffffff;
     height: 100%;
     width: 40px;
@@ -98,5 +114,10 @@ body {
     border: none;
     cursor: pointer;
     outline: none;
+    margin-bottom: 4px;
   }
+}
+
+.completed {
+  text-decoration: line-through;
 }
